@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+body {
+  background-color: #d8e3d4;
+  margin: 20px;
+  font-family: "Lato", sans-serif;
+}
+
+button,
+input {
+  font-family: "Lato", sans-serif;
+}
+
+#containerPage {
+  border: 1px solid #555555;
+  border-radius: 15px;
+  background-color: white;
+  padding: 20px;
+}
+
+.tblDane {
+  margin: 10px;
+}
+
+.person {
+  margin: 5px 0;
+  border: 1px solid #dddddd;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+}
+
+#btnLoad {
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #5e5e96;
+  color: white;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+}
+
+#btnLoad:hover {
+  background-color: #414174;
+}
+
+#btnLoad img {
+  width: 24px;
+  height: 24px;
+}
+
+.person img {
+  border-radius: 10px;
+}
+
+.loader {
+  justify-content: center;
+  display: none;
+}
+
+.loader.visible {
+  display: flex;
+}
+
+#containerMessages {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.message {
+  margin: 10px 0;
+  background-color: #effff4;
+  padding: 15px;
+  border-radius: 15px;
+  border: 1px solid #555555;
+  box-shadow: 2px 2px 10px 0px rgb(0 0 0 / 30%);
+  animation: appear 0.5s;
+}
