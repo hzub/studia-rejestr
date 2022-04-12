@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rejestr osób</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="containerPage">
+      <h1>Rejestr osób - wersja z fetch()</h1>
+      <button id="btnLoad">
+        <img src="img/load.svg" />Załaduj dane osób do tabeli
+      </button>
+      <div id="tblData"></div>
+      <div id="loader" class="loader">
+        <img src="img/loading.svg" />
+      </div>
+    </div>
+    <div id="containerMessages"></div>
+    <script src="js/functions.js"></script>
+    <script src="js/script_fetch.js"></script>
+  </body>
+</html>
